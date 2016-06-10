@@ -1,0 +1,168 @@
+@media only screen and (min-width: 480px) {
+	
+}
+	
+.startbutton{
+	background-image: url(/rio/images/ic_navigation_black_36dp.png);
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+		
+.stopbutton{
+	background-image: url(/rio/images/ic_close_black_36dp.png);
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+		
+[data = "fw"]{
+	background-image: url(/rio/images/ic_keyboard_arrow_up_black_36dp.png);
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat; 
+}
+
+[data = "rev"]{
+	background-image: url(/rio/images/ic_keyboard_arrow_down_black_36dp.png);
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+
+.leftbutton{
+	background-image: url(/rio/images/ic_keyboard_arrow_left_black_36dp.png);
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+		
+.rightbutton{
+	background-image: url(/rio/images/ic_keyboard_arrow_right_black_36dp.png);
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+
+.ui-radio .ui-btn{
+	height: 35px !important;
+}
+
+.ui-btn{
+	height: 85px;
+}
+
+#steer{
+	position: relative;
+	left: 4%;
+}
+
+#mech{
+	position: relative;
+	left: 4%;
+}
+
+#gear{
+	position: relative;
+	left: 2%;
+}
+
+#main{
+	position: relative;
+	left: 4%;
+}
+
+#lightdoor{
+	position: relative;
+	left: 4%;
+}
+
+#accessory{
+	position: relative;
+	left: 4%;
+}
+
+#left{
+	padding-left: 75px;
+	padding-right: 75px;
+}
+
+#right{
+	padding-left: 75px;
+	padding-right: 75px;
+}
+
+#start{
+	padding-left: 75px;
+	padding-right: 75px;
+}
+
+#stop{
+	padding-left: 75px;
+	padding-right: 75px;
+}
+
+#direction{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#headlights{
+	background-image: url(/rio/images/ic_flare_black_24dp.png);
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	height: 50px;
+	padding-left: 75px;
+	padding-right: 75px;
+}
+
+#leftdoor{
+	background-image: url(/rio/images/ic_first_page_black_24dp.png);
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	height: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#rightdoor{
+	background-image: url(/rio/images/ic_last_page_black_24dp.png);
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	height: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#key{
+	background-image: url(/rio/images/ic_vpn_key_black_24dp.png);
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;	
+	height: 50px;
+	padding-left: 75px;
+	padding-right: 75px;
+}
+
+#engine{
+	background-image: url(/rio/images/ic_restore_black_24dpx.png);
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	height: 50px;
+	padding-left: 75px;
+	padding-right: 75px;
+}
+
+#under{
+	background-image: url(/rio/images/ic_wb_iridescent_black_24dp.png);
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	height: 50px;
+	padding-left: 75px;
+	padding-right: 75px;
+}

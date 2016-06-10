@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+
+<title>my RIO WEB UI </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<link rel="stylesheet" type="text/css" href="/rio/css/riowebui.css">
+<link rel="stylesheet" type="text/css" href="/rio/css/jquery.mobile-1.4.5.css">
+	
+<body style="margin:40px">
+	<div data-role="page" id="pageone">
+		<div data-role="main" class="ui-content">
+			<div data-role="controlgroup" data-type="horizontal" id='mech'>
+				<button type="button" data='keyout' class='keybutton ui-btn' id='key'>
+				<button type="button" data='idle' class='enginebutton ui-btn' id='engine'>
+			</div>
+			
+			<div data-role="controlgroup" data-type="horizontal" id='main'>
+				<button type="button" class='startbutton ui-btn' id='start'></button>
+				<button type="button" class='stopbutton ui-btn' id='stop'></button>
+			</div>
+			
+			<div data-role="controlgroup" data-type="horizontal" id='steer'>
+				<button type="button" class='leftbutton ui-btn' id='left'></button>
+				<button type="button" class='rightbutton ui-btn' id='right'></button>
+			</div>
+			
+			<form id='gear'>
+				<fieldset data-role="controlgroup" data-type="horizontal" id='gear'>
+					<input type="radio" name="radio-choice-h-2" class='radio' id="REV" value="REV">
+					<label for="REV">REV</label>
+					<input type="radio" name="radio-choice-h-2" class='radio' id="N" value="N" checked="checked">
+					<label for="N">N</label>
+					<input type="radio" name="radio-choice-h-2" class='radio' id="1ST" value="1">
+					<label for="1ST">1ST</label>
+					<input type="radio" name="radio-choice-h-2" class='radio' id="2ND" value="2">
+					<label for="2ND">2ND</label>
+					<input type="radio" name="radio-choice-h-2" class='radio' id="3RD" value="3">
+					<label for="3RD">3RD</label>
+				</fieldset>
+			</form>
+			
+			<div data-role="controlgroup" data-type="horizontal" id='accessory'>
+				<button type="button" data='close' class='headbutton ui-btn' id='headlights'></button>
+				<button type="button" data='close' class='underbtn ui-btn' id='under'></button>
+			</div>
+		</div>
+	</div>
+</body>
+	
+	<script type="text/javascript" src="/rio/js/jquery_2_2_4.js"></script>
+	<script type="text/javascript" src="/rio/js/riowebui.js"></script>
+	<script type="text/javascript" src="/rio/js/jquery.mobile-1.4.5.js"></script>
+
+</html>
