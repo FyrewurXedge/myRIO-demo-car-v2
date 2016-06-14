@@ -8,6 +8,7 @@ var right_value = $( '#rightdoor' ).attr('data');
 var head_value = $( '#headlights' ).attr('data');
 var under_value = $( '#under' ).attr('data');
 var wiper_value = $( '#wiper' ).attr('data');
+var start_value = $( '#start' ).attr('data');
 
 document.addEventListener('touchmove', this.touchmove);
 function touchmove(e) {
@@ -27,10 +28,8 @@ $(document).ready(function(){
 		
 		//start button commands
 		
-		$( "#start" ).taphold(mDown);
-		$( "#start" ).tap(mUp);
-		$( "#start" ).mousedown(mDown);
-		$( "#start" ).mouseup(mUp);
+		$( "#start" ).ready(start_send);
+		$( "#start" ).click(start_toggle);
 		
 		//stop button commands
 		
@@ -312,6 +311,41 @@ function under_toggle(){
 			URL = document.URL;
 		URL = URL.replace("riowebui.html","") + this.id;
 		URL = URL +"?name=" + under_value;
+		xhttp.open("GET", URL, true)
+		xhttp.send()
+		console.log(URL);	
+	}	
+}
+
+
+function start_send(){
+	start_value = $('#start').attr('data');
+	URL = document.URL;
+	URL = URL.replace("riowebui.html","") + "start";
+	URL = URL +"?name=" + start_value;
+	xhttp.open("GET", URL, true)
+	xhttp.send()
+	console.log(URL);
+}
+
+function start_toggle(){
+	if($(this).attr('data') == "True"){
+		$(this).attr('data', "False");
+		start_value = $('#start').attr('data');
+			URL = document.URL;
+		URL = URL.replace("riowebui.html","") + this.id;
+		URL = URL +"?name=" + start_value;
+		xhttp.open("GET", URL, true)
+		xhttp.send()
+		console.log(URL);
+	} 
+	else
+	if($(this).attr('data') == "False"){
+		$(this).attr('data', "True");
+		start_value = $('#start').attr('data');
+			URL = document.URL;
+		URL = URL.replace("riowebui.html","") + this.id;
+		URL = URL +"?name=" + start_value;
 		xhttp.open("GET", URL, true)
 		xhttp.send()
 		console.log(URL);	
